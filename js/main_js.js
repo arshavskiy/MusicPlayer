@@ -1,7 +1,7 @@
 LoadMyPlayer();
 
 function LoadMyPlayer(){  
-    getPlaylists = getByPromise("/api/playlist.php?type=playlist")
+    getPlaylists = getByPromise("api/playlist.php?type=playlist")
     .then(function(data){
         buildPlaylists(data);
     }).then(function(data){
